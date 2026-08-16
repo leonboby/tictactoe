@@ -48,21 +48,6 @@ tictactoe-game/
 2. Place it on your web server
 3. Navigate to the file URL in your browser
 
-### Option 3: Local Development
-```bash
-# Clone or download the repository
-git clone <repository-url>
-cd tictactoe-game
-
-# Open in your favorite browser
-open index.html
-
-# Or use a local server (Python)
-python -m http.server 8000
-
-# Or use Node.js
-npx http-server
-```
 
 ## 🎯 How to Play
 
@@ -153,59 +138,6 @@ const moveSound = new Audio('path-to-sound.mp3');
 moveSound.play();
 ```
 
-## 🌐 Deployment
-
-### 1. **Netlify (Recommended - Easiest)**
-```bash
-# Visit netlify.com
-# Drag and drop tictactoe.html
-# Your game is live instantly!
-```
-
-### 2. **GitHub Pages**
-```bash
-# Create a GitHub repository
-git init
-git add README.md tictactoe.html
-git commit -m "Add tic-tac-toe game"
-git branch -M main
-git remote add origin <your-repository-url>
-git push -u origin main
-
-# Enable GitHub Pages in repository settings
-# Your game will be available at:
-# https://yourusername.github.io/tictactoe/tictactoe.html
-```
-
-### 3. **Vercel**
-```bash
-# Visit vercel.com
-# Connect your GitHub account
-# Import the repository
-# Deploy automatically
-```
-
-### 4. **Replit**
-1. Go to [replit.com](https://replit.com)
-2. Create a new HTML project
-3. Copy the contents of `tictactoe.html` into `index.html`
-4. Click "Run"
-5. Get a shareable public URL
-
-### 5. **Local Server**
-```bash
-# Using Python 3
-python -m http.server 8000
-
-# Using Node.js
-npx http-server
-
-# Using PHP
-php -S localhost:8000
-
-# Then visit: http://localhost:8000/tictactoe.html
-```
-
 ## 🌍 Browser Support
 
 This game works on all modern browsers:
@@ -275,38 +207,6 @@ updateStats()
 - `moveHistory`: Array tracking all moves made
 - `stats`: Object tracking wins, losses, and draws
 
-## 🐛 Troubleshooting
-
-**Q: The game won't open**
-- A: Make sure you're opening it in a modern web browser (Chrome, Firefox, Safari, Edge)
-
-**Q: The AI plays instantly but I want it slower**
-- A: Find the `setTimeout` line and increase the value (e.g., from 500 to 1000)
-
-**Q: I want to reset my statistics**
-- A: Open developer tools (F12), go to Console, and clear your browser's local storage
-
-**Q: Can I play on my phone?**
-- A: Yes! The game is fully responsive and mobile-friendly
-
-**Q: Can I embed this on my website?**
-- A: Yes! You can use an iframe: `<iframe src="tictactoe.html"></iframe>`
-
-## 💡 Enhancement Ideas
-
-Interested in learning game development? Here are some ideas to extend this project:
-
-1. **Difficulty Levels**: Add Easy, Medium, and Hard AI modes
-2. **Multiplayer**: Add local multiplayer (player vs player)
-3. **Online Multiplayer**: Use WebSockets for real-time multiplayer
-4. **Sound Effects**: Add audio feedback for moves and wins
-5. **Themes**: Implement dark mode and multiple color themes
-6. **Animations**: Add winning line highlight animation
-7. **Leaderboard**: Track high scores and best streaks
-8. **Game History**: Display replay of previous games
-9. **Touch Gestures**: Add swipe controls for mobile
-10. **PWA**: Convert to Progressive Web App for offline play
-
 ## 📄 License
 
 This project is open source and available under the MIT License. Feel free to use, modify, and distribute this code for personal or commercial projects.
@@ -324,43 +224,6 @@ Contributions are welcome! If you'd like to improve this project:
 3. Commit your changes (`git commit -m 'Add amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
-
-## 📞 Support
-
-If you have questions or issues:
-- Check the Troubleshooting section above
-- Review the code comments
-- Test in a different browser
-- Clear your browser cache
-
-## 🎓 Learning Resources
-
-Want to learn more about game development?
-
-- [MDN Web Docs - Game Development](https://developer.mozilla.org/en-US/docs/Games)
-- [JavaScript.info - Game Loop](https://javascript.info/)
-- [CSS Tricks - Game Development](https://css-tricks.com/)
-- [Codecademy - JavaScript Games](https://www.codecademy.com/)
-
-## ⭐ If You Enjoyed This
-
-If you found this project helpful:
-- Star this repository
-- Share it with others
-- Consider contributing improvements
-- Use it as a learning resource
-
-## 📈 Version History
-
-### Version 1.0.0 (Initial Release)
-- Core game mechanics
-- AI opponent with strategy
-- Win/draw detection
-- Game statistics
-- Responsive design
-- Undo functionality
-
----
 
 **Last Updated**: August 2026
 **Status**: ✅ Production Ready
